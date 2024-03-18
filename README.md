@@ -98,7 +98,7 @@ pipeline {
                 }
                 emailext (
                     subject: "Pipeline ${currentBuild.result}",
-                    body: "<html><body><h2 style='color: ${color};'>Pipeline ${currentBuild.result}</h2><p>Some content about the pipeline.</p><img src='https://example.com/image.png' alt='Image'></body></html>",
+                    body: "<html><body><h2 style='color: ${color};'>Pipeline ${currentBuild.result}</h2><p>Some content about pipeline.</p><img src='https://example.com/image.png' alt='Image'></body></html>",
                     to: "dvijay11@gmail.com",
                     from: 'jenkins@gmail.com',
                     mimeType: 'text/html',
